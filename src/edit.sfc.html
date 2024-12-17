@@ -1,0 +1,17 @@
+<script type="module">
+
+  export class State {
+    /**
+     * called when the component is connected to the DOM
+     */
+    async $connectedCallback() {
+      const { $component } = this;
+      setTimeout(function () {
+        $component.element.focus();
+      }, 0);
+    }
+  }
+  
+  export const options = { extends:"input" };
+  
+  </script>
