@@ -16,8 +16,8 @@ const FilterType = {
 
 /** @type {Object<FilterType,(item:TodoItem)=>boolean>} filter function by filter type */
 const filterFuncByFilterType = {
-  [FilterType.all]: item       => true,
-  [FilterType.active]: item    => !item.completed,
+  [FilterType.all]:       item => true,
+  [FilterType.active]:    item => !item.completed,
   [FilterType.completed]: item => item.completed,
 };
 
